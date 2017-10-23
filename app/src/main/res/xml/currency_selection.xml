@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_NGN"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_NGN" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_USD"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_USD" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_EUR"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_EUR" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_GBP"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_GBP" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_JPY"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_JPY" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_RUB"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_RUB" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_SGD"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_SGD" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_PLN"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_PLN" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_AUD"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_AUD" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_CAD"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_CAD" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_SEK"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_SEK" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_AED"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_AED" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_INR"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_INR" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_MXN"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_MXN" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_RON"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_RON" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_CHF"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_CHF" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_PHP"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_PHP" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_HKD"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_HKD" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_CZK"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_CZK" />
+    <SwitchPreference
+        android:defaultValue="@bool/add_currency_default_message"
+        android:key="@string/currency_added_key_switch_VEF"
+        android:summaryOff="@string/add_currency_summary_dont_add"
+        android:summaryOn="@string/add_currency_summary_add"
+        android:title="@string/currency_added_title_switch_VEF" />
+
+
+</PreferenceScreen>

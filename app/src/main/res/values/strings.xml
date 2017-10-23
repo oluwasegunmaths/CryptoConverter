@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Crypto Converter</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_internet_connection">NO INTERNET CONNECTION</string>
+    <string name="no_currency_selected">GET STARTED BY CLICKING BUTTON AT BOTTOM RIGHT CORNER</string>
+    <string name="no_currencies">No CURRENCIES</string>
+    <string name="add_currency_summary_add">Currency added</string>
+    <string name="add_currency_summary_dont_add">Currency is not added</string>
+    <string name="convert">CONVERT </string>
+    <string name="edit_text_hint">INPUT AMOUNT TO CONVERT</string>
+    <string name="btc_value">BTC VALUE</string>
+    <string name="eth_value">ETH VALUE</string>
+    <string name="btc_equals">1 BTC = </string>
+    <string name="eth_equals">1 ETH = </string>
+
+    <string name="currency_added_key_switch_NGN">0</string>
+    <string name="currency_added_key_switch_USD">1</string>
+    <string name="currency_added_key_switch_EUR">2</string>
+    <string name="currency_added_key_switch_GBP">3</string>
+    <string name="currency_added_key_switch_JPY">4</string>
+    <string name="currency_added_key_switch_RUB">5</string>
+    <string name="currency_added_key_switch_SGD">6</string>
+    <string name="currency_added_key_switch_PLN">7</string>
+    <string name="currency_added_key_switch_AUD">8</string>
+    <string name="currency_added_key_switch_CAD">9</string>
+    <string name="currency_added_key_switch_SEK">10</string>
+    <string name="currency_added_key_switch_AED">11</string>
+    <string name="currency_added_key_switch_INR">12</string>
+    <string name="currency_added_key_switch_MXN">13</string>
+    <string name="currency_added_key_switch_RON">14</string>
+    <string name="currency_added_key_switch_CHF">15</string>
+    <string name="currency_added_key_switch_PHP">16</string>
+    <string name="currency_added_key_switch_HKD">17</string>
+    <string name="currency_added_key_switch_CZK">18</string>
+    <string name="currency_added_key_switch_VEF">19</string>
+
+
+    <string name="currency_added_title_switch_NGN">Nigerian naira-NGN</string>
+    <string name="currency_added_title_switch_USD">US dollars-USD</string>
+    <string name="currency_added_title_switch_EUR">European union-EUR</string>
+    <string name="currency_added_title_switch_GBP">British pounds-GBP</string>
+    <string name="currency_added_title_switch_JPY">Japanese yen-JPY</string>
+    <string name="currency_added_title_switch_RUB">Russian rouble-RUB</string>
+    <string name="currency_added_title_switch_SGD">Singapore dollar-SGD</string>
+    <string name="currency_added_title_switch_PLN">Poland zloty-PLN</string>
+    <string name="currency_added_title_switch_AUD">Australian dollar-AUD</string>
+    <string name="currency_added_title_switch_CAD">Canadian dollar-CAD</string>
+    <string name="currency_added_title_switch_SEK">Swedish krona-SEK</string>
+    <string name="currency_added_title_switch_AED">UAE dirham-AED</string>
+    <string name="currency_added_title_switch_INR">Indian rupee-INR</string>
+    <string name="currency_added_title_switch_MXN">Mexican peso-MXN</string>
+    <string name="currency_added_title_switch_RON">Romanian new lei-RON</string>
+    <string name="currency_added_title_switch_CHF">Switzerland franc-CHF</string>
+    <string name="currency_added_title_switch_PHP">Philippines peso-PHP</string>
+    <string name="currency_added_title_switch_HKD">Hong kong dollar-HKD</string>
+    <string name="currency_added_title_switch_CZK">Czech koruna-CZK</string>
+    <string name="currency_added_title_switch_VEF">Venezuelan bolivar-VEF</string>
+
+
+</resources>
