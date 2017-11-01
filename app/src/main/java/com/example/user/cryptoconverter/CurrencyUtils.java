@@ -179,7 +179,7 @@ public final class CurrencyUtils {
     }
 
     //parses the full currency string to extract the internationally and java recognized 3 letter abbreviated currency string
-    public static String extractAbbreviatedCurrencyFromString(String currencyString) {
+    protected static String extractAbbreviatedCurrencyFromString(String currencyString) {
         int index = currencyString.indexOf("-");
         index += 1;
         return currencyString.substring(index);
