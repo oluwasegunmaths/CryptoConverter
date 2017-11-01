@@ -8,8 +8,8 @@
     <string name="add_currency_summary_dont_add">Currency is not added</string>
     <string name="convert">CONVERT </string>
     <string name="edit_text_hint">INPUT AMOUNT TO CONVERT</string>
-    <string name="btc_value">BTC VALUE</string>
-    <string name="eth_value">ETH VALUE</string>
+    <string name="btc_value">BITCOIN VALUE</string>
+    <string name="eth_value">ETHEREUM VALUE</string>
     <string name="btc_equals">1 BTC = </string>
     <string name="eth_equals">1 ETH = </string>
 

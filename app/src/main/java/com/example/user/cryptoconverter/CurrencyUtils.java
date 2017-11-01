@@ -6,15 +6,13 @@ import android.util.Log;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 import javax.net.ssl.HttpsURLConnection;
 
@@ -87,7 +85,7 @@ public final class CurrencyUtils {
         //perform HTTP request to the URL and receive a JSON response back
         String jsonOutputString = null;
         try {
-            jsonOutputString = getResponse(url);
+            jsonOutputString = getResponseFromHttpsUrl(url);
         } catch (IOException e) {
             Log.e(LOG_TAG, "error closing input stream", e);
         }
@@ -106,58 +104,30 @@ public final class CurrencyUtils {
         return url;
     }
 
-    // opens up an internet connection
-    //use helper 'readStream' method to decode output into a String containing the raw json
-    //return the json as a string
-    private static String getResponse(URL url) throws IOException {
-
-        String jsonResponse = "";
-        // return early if url is null
-        if (url == null) {
-            return jsonResponse;
-        }
-        InputStream inputStream = null;
-        HttpsURLConnection httpsURLConnection = null;
-
+    /**
+     * This method returns the entire result from the HTTPS response.
+     *
+     * @param url The URL to fetch the HTTPS response from.
+     * @return The contents of the HTTPS response.
+     * @throws IOException Related to network and stream reading
+     */
+    private static String getResponseFromHttpsUrl(URL url) throws IOException {
+        HttpsURLConnection urlConnection = (HttpsURLConnection) url.openConnection();
         try {
-            httpsURLConnection = (HttpsURLConnection) url.openConnection();
-            httpsURLConnection.setReadTimeout(10000);
-            httpsURLConnection.setConnectTimeout(15000);
-            httpsURLConnection.setRequestMethod("GET");
-            httpsURLConnection.connect();
-            //read input stream and parse response if request was successful(response code 200)
-            if (httpsURLConnection.getResponseCode() == 200) {
-                inputStream = httpsURLConnection.getInputStream();
-                jsonResponse = readStream(inputStream);
-            } else {
-                Log.e(LOG_TAG, "ERROR RESPONSE CODE :" + httpsURLConnection.getResponseCode());
-            }
-        } catch (IOException e) {
-            Log.e(LOG_TAG, "problem retrieving currency json results", e);
-        } finally {
-            if (httpsURLConnection != null) {
-                httpsURLConnection.disconnect();
-            }
-            if (inputStream != null) {
-                inputStream.close();
-            }
-        }
-        return jsonResponse;
-    }
+            InputStream inputStream = urlConnection.getInputStream();
 
-    //converts the input stream from the internet connection to a string containing the whole unmodified json response
-    private static String readStream(InputStream inputStream) throws IOException {
-        StringBuilder stringBuilder = new StringBuilder();
-        if (inputStream != null) {
-            InputStreamReader inputStreamReader = new InputStreamReader(inputStream, Charset.forName("UTF-8"));
-            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
-            String line = bufferedReader.readLine();
-            while (line != null) {
-                stringBuilder.append(line);
-                line = bufferedReader.readLine();
+            Scanner scanner = new Scanner(inputStream);
+            scanner.useDelimiter("\\A");
+
+            boolean hasInput = scanner.hasNext();
+            if (hasInput) {
+                return scanner.next();
+            } else {
+                return null;
             }
+        } finally {
+            urlConnection.disconnect();
         }
-        return stringBuilder.toString();
     }
 
     //called to return the appropriate full currency string according to the way they are arranged in the url
